@@ -1,11 +1,42 @@
 # TeleTunnel v2
 
-A Telegram-based remote access utility for Windows. 
+A Telegram-based remote access tool for Windows. 
 **Disclaimer: For authorized use on systems you own only ! Please 🙇**
 
 ## Features
 - Remote administration via a Telegram bot.
 - Secure control (only accepts commands from your specified Telegram user ID).
+
+The bot have these features:
+```ansi
+ᴛᴇʟᴇᴛᴜɴɴᴇʟ ᴠ2.0
+────────────────────
+👤 Identity: USER@HOSTNAME
+
+🛠 ʀᴇᴄᴏɴɴᴀɪssᴀɴᴄᴇ
+├── sysinfo  - Full system report
+├── ss       - Desktop capture
+├── ps       - Process listing
+└── ls <path>- Directory browser
+
+⚡️ ᴄᴏᴍᴍᴀɴᴅ ᴄᴇɴᴛᴇʀ
+├── > <cmd>  - Native shell
+├── spawn <PID> <cmd> - Spoofed exec
+├── clip get/set - Clipboard manager
+└── kill     - Self-destruct
+
+💾 ғɪʟᴇ ᴏᴘᴇʀᴀᴛɪᴏɴs
+├── get <path> - Download from host
+├── [Drag/Drop]- Upload to host
+└── drops     - List uploads ($1, $LAST)
+
+⌨️ ᴋᴇʏʟᴏɢɢᴇʀ
+└── keylog <start|stop|dump|status>
+
+📡 ᴛᴜɴɴᴇʟɪɴɢ
+└── open|send|close|streams
+────────────────────
+```
 
 ## Prerequisites
 - A Windows environment.
