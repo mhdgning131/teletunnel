@@ -9,8 +9,8 @@ A Telegram-based remote access utility for Windows.
 
 ## Prerequisites
 - A Windows environment.
-- C++17 compliant compiler (e.g., MSVC or MinGW).
-- The project includes `nlohmann/json.hpp` for JSON parsing.
+- C++17 compliant compiler (e.g. MinGW).
+- The project includes `nlohmann/json.hpp` for JSON parsing. This is included in the repo, removing you some headache searching it
 
 ## Setup Instructions
 
@@ -29,9 +29,9 @@ A Telegram-based remote access utility for Windows.
 
 ## Compilation
 
-Ensure you link the required Windows libraries: `wininet`, `ws2_32`, `gdiplus`, `ole32`, and `iphlpapi`.
+Ensure you have required Windows libraries: `wininet`, `ws2_32`, `gdiplus`, `ole32`, and `iphlpapi`.
 
-**Example using GCC/MinGW:**
+**using GCC/MinGW:**
 ```bash
 g++ -std=c++17 -O2 -mwindows -I. -Inlohmann "./TeleTunnel v2.cpp" -o TeleTunnelv2.exe -lwininet -lws2_32 -lgdiplus -lole32 -liphlpapi -static -static-libgcc -static-libstdc++
 ```
